@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Services from "@/components/services";
@@ -8,27 +7,21 @@ import CTA from "@/components/cta";
 import Footer from "@/components/footer";
 import WhatsAppButton from "@/components/wpp-button";
 
+export const metadata = {
+  title: "SOS Polimentos - Recupere o Brilho Original do Seu Piso",
+  description:
+    "Serviços especializados em polimento e restauração de pisos em Salvador e Região Metropolitana. Mais de 10 anos de experiência.",
+  openGraph: {
+    title: "SOS Polimentos - Recupere o Brilho Original do Seu Piso",
+    description:
+      "Serviços especializados em polimento e restauração de pisos em Salvador e Região Metropolitana.",
+    type: "website"
+  }
+};
+
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>SOS Polimentos - Recupere o Brilho Original do Seu Piso</title>
-        <meta
-          name="description"
-          content="Serviços especializados em polimento e restauração de pisos em Salvador e Região Metropolitana. Mais de 10 anos de experiência."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          property="og:title"
-          content="SOS Polimentos - Recupere o Brilho Original do Seu Piso"
-        />
-        <meta
-          property="og:description"
-          content="Serviços especializados em polimento e restauração de pisos em Salvador e Região Metropolitana."
-        />
-        <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://sospolimentos.com.br" />
-      </Head>
       <main className="overflow-x-hidden">
         <Header />
         <Hero />

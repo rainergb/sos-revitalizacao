@@ -38,62 +38,61 @@ export default function Services() {
     <section id="servicos" className="section-padding bg-gray-50">
       <div className="container-custom">
         {/* Header */}
-        <div className="text-center space-y-4 mb-16">
-          <div className="inline-flex items-center space-x-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium">
-            <Sparkles size={16} />
+        <div className="text-center space-y-4 mb-12 sm:mb-16">
+          <div className="inline-flex items-center space-x-2 bg-blue-100 text-blue-700 px-3 py-2 sm:px-4 rounded-full text-xs sm:text-sm font-medium">
+            <Sparkles size={14} className="sm:w-4 sm:h-4" />
             <span>Nossos Serviços</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 animate-slide-up">
-            Soluções completas para restaurar pisos 
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 px-4">
+            Soluções completas para restaurar pisos
             <span className="gradient-text"> com perfeição</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-slide-up" style={{animationDelay: '0.1s'}}>
-            Com mais de 10 anos de experiência, a SOS Polimentos é especialista em 
-            devolver a beleza e o brilho de diversos tipos de pisos e bancadas — 
-            com rapidez, limpeza e alto padrão de acabamento.
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+            Com mais de 10 anos de experiência, a SOS Polimentos é especialista
+            em devolver a beleza e o brilho de diversos tipos de pisos e
+            bancadas — com rapidez, limpeza e alto padrão de acabamento.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service, index) => (
-            <div 
+            <div
               key={index}
-              className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-slide-up card-hover"
-              style={{animationDelay: `${index * 0.1}s`}}
+              className="group bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 card-hover"
             >
-              <div className="w-16 h-16 bg-gradient-to-r from-primary-500 to-primary-600 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
-                {service.icon}
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="scale-75 sm:scale-100">{service.icon}</div>
               </div>
-              
-              <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">
+
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 group-hover:text-blue-600 transition-colors">
                 {service.title}
               </h3>
-              
-              <p className="text-gray-600 leading-relaxed">
+
+              <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                 {service.description}
               </p>
 
               {/* Hover Effect */}
-              <div className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="w-full h-1 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full"></div>
+              <div className="mt-4 sm:mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="w-full h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full"></div>
               </div>
             </div>
           ))}
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-16 animate-slide-up" style={{animationDelay: '0.8s'}}>
-          <a 
+        <div className="text-center mt-12 sm:mt-16 px-4">
+          <a
             href="https://wa.me/5571999999999?text=Olá! Gostaria de saber mais sobre os serviços de polimento."
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary inline-flex items-center space-x-2"
+            className="btn-primary inline-flex items-center space-x-2 w-full sm:w-auto justify-center"
           >
             <span>Ver Todos os Serviços</span>
           </a>
         </div>
       </div>
     </section>
-  )
+  );
 }

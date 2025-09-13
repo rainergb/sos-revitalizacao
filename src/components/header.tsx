@@ -9,73 +9,91 @@ export default function Header() {
   return (
     <header className="fixed w-full top-0 bg-white/95 backdrop-blur-md shadow-lg z-50 transition-all duration-300">
       <div className="container-custom">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between py-3 sm:py-4">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-r from-primary-600 to-primary-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">S</span>
+          <div className="flex items-center space-x-2 sm:space-x-3">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-lg sm:text-xl">S</span>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">SOS</h1>
-              <p className="text-xs text-gray-600">Polimentos</p>
+              <h1 className="text-lg sm:text-xl font-bold text-gray-900">
+                SOS
+              </h1>
+              <p className="text-xs text-gray-600 hidden sm:block">
+                Polimentos
+              </p>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#servicos" className="text-gray-700 hover:text-primary-600 transition-colors">
+          <nav className="hidden md:flex items-center space-x-4 lg:space-x-8">
+            <a
+              href="#servicos"
+              className="text-sm lg:text-base text-gray-700 hover:text-blue-600 transition-colors"
+            >
               Serviços
             </a>
-            <a href="#processo" className="text-gray-700 hover:text-primary-600 transition-colors">
+            <a
+              href="#processo"
+              className="text-sm lg:text-base text-gray-700 hover:text-blue-600 transition-colors"
+            >
               Como Trabalhamos
             </a>
-            <a href="#antes-depois" className="text-gray-700 hover:text-primary-600 transition-colors">
+            <a
+              href="#antes-depois"
+              className="text-sm lg:text-base text-gray-700 hover:text-blue-600 transition-colors"
+            >
               Antes e Depois
             </a>
-            <a 
-              href="#contato" 
+            <a
+              href="#contato"
               className="btn-primary flex items-center space-x-2"
             >
-              <Phone size={18} />
-              <span>Orçamento</span>
+              <Phone size={16} className="sm:inline hidden" />
+              <span className="text-sm lg:text-base">Orçamento</span>
             </a>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-gray-700 hover:text-primary-600 transition-colors"
+            className="md:hidden p-2 text-gray-700 hover:text-blue-600 transition-colors"
+            aria-label="Toggle menu"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
-        <div className={`md:hidden transition-all duration-300 ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'} overflow-hidden`}>
+        <div
+          className={`md:hidden transition-all duration-300 ${
+            isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+          } overflow-hidden`}
+        >
           <nav className="py-4 space-y-4 border-t">
-            <a 
-              href="#servicos" 
-              className="block py-2 text-gray-700 hover:text-primary-600 transition-colors"
+            <a
+              href="#servicos"
+              className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Serviços
             </a>
-            <a 
-              href="#processo" 
-              className="block py-2 text-gray-700 hover:text-primary-600 transition-colors"
+            <a
+              href="#processo"
+              className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Como Trabalhamos
             </a>
-            <a 
-              href="#antes-depois" 
-              className="block py-2 text-gray-700 hover:text-primary-600 transition-colors"
+            <a
+              href="#antes-depois"
+              className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Antes e Depois
             </a>
-            <a 
-              href="#contato" 
+            <a
+              href="#contato"
               className="btn-primary inline-flex items-center space-x-2"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -86,5 +104,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
