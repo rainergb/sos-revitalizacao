@@ -86,12 +86,12 @@ export default function BeforeAfter() {
                       <p className="text-xs">Antes</p>
                     </div>
                   </div>
-                  <div className="w-1/2 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative">
-                    <span className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 bg-blue-600 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
+                  <div className="w-1/2 bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center relative">
+                    <span className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 bg-yellow-600 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
                       {example.afterText}
                     </span>
-                    <div className="text-blue-700 text-center">
-                      <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-300 rounded-full mx-auto mb-1 sm:mb-2 shadow-lg"></div>
+                    <div className="text-yellow-700 text-center">
+                      <div className="w-12 h-12 sm:w-16 sm:h-16 bg-yellow-300 rounded-full mx-auto mb-1 sm:mb-2 shadow-lg"></div>
                       <p className="text-xs font-medium">Depois</p>
                     </div>
                   </div>
@@ -104,14 +104,14 @@ export default function BeforeAfter() {
                 <div className="absolute top-1/2 left-1/2 w-6 h-6 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center transform -translate-x-1/2 -translate-y-1/2 shadow-lg group-hover:scale-110 transition-transform">
                   <ArrowRight
                     size={14}
-                    className="text-blue-600 sm:w-4 sm:h-4"
+                    className="text-yellow-600 sm:w-4 sm:h-4"
                   />
                 </div>
               </div>
 
               {/* Content */}
               <div className="p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1 sm:mb-2 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1 sm:mb-2 group-hover:text-yellow-600 transition-colors">
                   {example.title}
                 </h3>
                 <p className="text-gray-600 text-xs sm:text-sm">

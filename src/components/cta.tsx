@@ -4,7 +4,7 @@ export default function CTA() {
   return (
     <section
       id="contato"
-      className="section-padding bg-gradient-to-r from-blue-600 to-blue-500 relative overflow-hidden"
+      className="section-padding bg-gradient-to-r from-yellow-600 to-yellow-500 relative overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-pattern opacity-10"></div>
@@ -25,7 +25,7 @@ export default function CTA() {
               <span className="text-yellow-300">especialista!</span>
             </h2>
 
-            <p className="text-lg sm:text-xl text-blue-100 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-yellow-100 max-w-2xl mx-auto">
               Transforme seus pisos com a experiência de mais de 10 anos no
               mercado. Atendimento rápido e gratuito.
             </p>
@@ -37,7 +37,7 @@ export default function CTA() {
               href="https://wa.me/5571999999999?text=Olá! Gostaria de solicitar um orçamento para polimento de piso."
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-white hover:bg-gray-50 text-blue-600 font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-xl shadow-2xl hover:shadow-white/25 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center space-x-2 sm:space-x-3 text-sm sm:text-base lg:text-lg group"
+              className="w-full sm:w-auto bg-white hover:bg-gray-50 text-yellow-600 font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-xl shadow-2xl hover:shadow-white/25 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center space-x-2 sm:space-x-3 text-sm sm:text-base lg:text-lg group"
             >
               <MessageCircle
                 size={20}
@@ -48,7 +48,7 @@ export default function CTA() {
 
             <a
               href="tel:+5571999999999"
-              className="w-full sm:w-auto border-2 border-white hover:bg-white hover:text-blue-600 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center space-x-2 sm:space-x-3 text-sm sm:text-base lg:text-lg group"
+              className="w-full sm:w-auto border-2 border-white hover:bg-white hover:text-yellow-600 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center space-x-2 sm:space-x-3 text-sm sm:text-base lg:text-lg group"
             >
               <Phone
                 size={20}
@@ -67,7 +67,7 @@ export default function CTA() {
               <h3 className="font-bold text-white mb-1 sm:mb-2 text-sm sm:text-base">
                 Atendimento Rápido
               </h3>
-              <p className="text-blue-100 text-xs sm:text-sm">
+              <p className="text-yellow-100 text-xs sm:text-sm">
                 Resposta em até 30 minutos
               </p>
             </div>
@@ -79,7 +79,7 @@ export default function CTA() {
               <h3 className="font-bold text-white mb-1 sm:mb-2 text-sm sm:text-base">
                 Orçamento Gratuito
               </h3>
-              <p className="text-blue-100 text-xs sm:text-sm">
+              <p className="text-yellow-100 text-xs sm:text-sm">
                 Sem compromisso ou taxas
               </p>
             </div>
@@ -91,7 +91,7 @@ export default function CTA() {
               <h3 className="font-bold text-white mb-1 sm:mb-2 text-sm sm:text-base">
                 Suporte Completo
               </h3>
-              <p className="text-blue-100 text-xs sm:text-sm">
+              <p className="text-yellow-100 text-xs sm:text-sm">
                 Do orçamento à entrega
               </p>
             </div>

@@ -9,7 +9,7 @@ export default function Footer() {
             {/* Company Info */}
             <div className="space-y-3 sm:space-y-4 sm:col-span-2 lg:col-span-1">
               <div className="flex items-center space-x-2 sm:space-x-3">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-yellow-600 to-yellow-500 rounded-lg flex items-center justify-center">
                   <span className="font-bold text-lg sm:text-xl">S</span>
                 </div>
                 <div>
@@ -45,13 +45,13 @@ export default function Footer() {
               <h4 className="text-base sm:text-lg font-bold">Contato</h4>
               <div className="space-y-2 sm:space-y-3">
                 <div className="flex items-center space-x-2 sm:space-x-3">
-                  <Phone size={16} className="text-blue-500 sm:w-5 sm:h-5" />
+                  <Phone size={16} className="text-yellow-500 sm:w-5 sm:h-5" />
                   <span className="text-gray-300 text-sm sm:text-base">
                     (71) 99999-9999
                   </span>
                 </div>
                 <div className="flex items-center space-x-2 sm:space-x-3">
-                  <Mail size={16} className="text-blue-500 sm:w-5 sm:h-5" />
+                  <Mail size={16} className="text-yellow-500 sm:w-5 sm:h-5" />
                   <span className="text-gray-300 text-sm sm:text-base break-all">
                     contato@sospolimentos.com.br
                   </span>
@@ -59,7 +59,7 @@ export default function Footer() {
                 <div className="flex items-start space-x-2 sm:space-x-3">
                   <MapPin
                     size={16}
-                    className="text-blue-500 mt-1 sm:w-5 sm:h-5"
+                    className="text-yellow-500 mt-1 sm:w-5 sm:h-5"
                   />
                   <span className="text-gray-300 text-sm sm:text-base">
                     Salvador e Região Metropolitana
@@ -77,7 +77,7 @@ export default function Footer() {
               </h4>
               <div className="space-y-2 text-gray-300">
                 <div className="flex items-center space-x-2">
-                  <Clock size={14} className="text-blue-500 sm:w-4 sm:h-4" />
+                  <Clock size={14} className="text-yellow-500 sm:w-4 sm:h-4" />
                   <span className="text-xs sm:text-sm">Segunda a Sexta</span>
                 </div>
                 <p className="text-xs sm:text-sm ml-5 sm:ml-6">
@@ -85,7 +85,7 @@ export default function Footer() {
                 </p>
 
                 <div className="flex items-center space-x-2 mt-2">
-                  <Clock size={14} className="text-blue-500 sm:w-4 sm:h-4" />
+                  <Clock size={14} className="text-yellow-500 sm:w-4 sm:h-4" />
                   <span className="text-xs sm:text-sm">Sábado</span>
                 </div>
                 <p className="text-xs sm:text-sm ml-5 sm:ml-6">
@@ -105,10 +105,10 @@ export default function Footer() {
               © 2024 SOS Polimentos. Todos os direitos reservados.
             </div>
             <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 text-xs sm:text-sm text-gray-400">
-              <a href="#" className="hover:text-blue-500 transition-colors">
+              <a href="#" className="hover:text-yellow-500 transition-colors">
                 Política de Privacidade
               </a>
-              <a href="#" className="hover:text-blue-500 transition-colors">
+              <a href="#" className="hover:text-yellow-500 transition-colors">
                 Termos de Uso
               </a>
             </div>

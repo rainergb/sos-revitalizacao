@@ -31,12 +31,12 @@ export default function Process() {
           {/* Content */}
           <div className="space-y-6 sm:space-y-8">
             <div className="space-y-3 sm:space-y-4">
-              <div className="inline-flex items-center space-x-2 bg-blue-100 text-blue-700 px-3 py-2 sm:px-4 rounded-full text-xs sm:text-sm font-medium">
+              <div className="inline-flex items-center space-x-2 bg-amber-100 text-amber-700 px-3 py-2 sm:px-4 rounded-full text-xs sm:text-sm font-medium">
                 <Shield size={14} className="sm:w-4 sm:h-4" />
                 <span>Nosso Processo</span>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800">
                 Serviço <span className="gradient-text">limpo, ágil</span>
                 <br className="hidden sm:block" />
                 <span className="sm:hidden"> </span>e sem dor de cabeça
@@ -56,14 +56,14 @@ export default function Process() {
                   key={index}
                   className="flex items-start space-x-3 sm:space-x-4"
                 >
-                  <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center text-white">
+                  <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-yellow-500 to-amber-500 rounded-lg flex items-center justify-center text-white">
                     <div className="scale-75 sm:scale-100">{feature.icon}</div>
                   </div>
                   <div className="space-y-1">
-                    <h3 className="font-bold text-gray-900 text-base sm:text-lg">
+                    <h3 className="font-bold text-slate-800 text-base sm:text-lg">
                       {feature.title}
                     </h3>
-                    <p className="text-gray-600 text-sm sm:text-base">
+                    <p className="text-slate-600 text-sm sm:text-base">
                       {feature.description}
                     </p>
                   </div>
@@ -92,7 +92,7 @@ export default function Process() {
                 <div className="text-center space-y-2">
                   <Shield
                     size={32}
-                    className="mx-auto text-blue-500 sm:w-12 sm:h-12"
+                    className="mx-auto text-yellow-500 sm:w-12 sm:h-12"
                   />
                   <p className="font-medium text-sm sm:text-base">
                     Processo Profissional
@@ -101,7 +101,7 @@ export default function Process() {
               </div>
 
               {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white shadow-lg animate-float">
+              <div className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center text-white shadow-lg animate-float">
                 <CheckCircle
                   size={20}
                   className="sm:w-6 sm:h-6 lg:w-8 lg:h-8"

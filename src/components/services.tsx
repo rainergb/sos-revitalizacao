@@ -35,15 +35,15 @@ export default function Services() {
   ]
 
   return (
-    <section id="servicos" className="section-padding bg-gray-50">
+    <section id="servicos" className="section-padding bg-amber-50">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center space-y-4 mb-12 sm:mb-16">
-          <div className="inline-flex items-center space-x-2 bg-blue-100 text-blue-700 px-3 py-2 sm:px-4 rounded-full text-xs sm:text-sm font-medium">
+          <div className="inline-flex items-center space-x-2 bg-yellow-100 text-yellow-700 px-3 py-2 sm:px-4 rounded-full text-xs sm:text-sm font-medium">
             <Sparkles size={14} className="sm:w-4 sm:h-4" />
             <span>Nossos Serviços</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 px-4">
             Soluções completas para restaurar pisos
             <span className="gradient-text"> com perfeição</span>
           </h2>
@@ -61,21 +61,21 @@ export default function Services() {
               key={index}
               className="group bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 card-hover"
             >
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center text-white mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
                 <div className="scale-75 sm:scale-100">{service.icon}</div>
               </div>
 
-              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 group-hover:text-blue-600 transition-colors">
+              <h3 className="text-lg sm:text-xl font-bold text-slate-800 mb-2 sm:mb-3 group-hover:text-yellow-600 transition-colors">
                 {service.title}
               </h3>
 
-              <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
+              <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                 {service.description}
               </p>
 
               {/* Hover Effect */}
               <div className="mt-4 sm:mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="w-full h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full"></div>
+                <div className="w-full h-1 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full"></div>
               </div>
             </div>
           ))}

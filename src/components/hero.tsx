@@ -2,25 +2,25 @@ import { Wrench, Star } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800 pt-16 sm:pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900 pt-16 sm:pt-20">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-pattern opacity-10"></div>
 
       {/* Animated Background Elements */}
-      <div className="absolute top-20 left-4 sm:left-10 w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full opacity-20 animate-float"></div>
+      <div className="absolute top-20 left-4 sm:left-10 w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full opacity-30 animate-float"></div>
       <div
-        className="absolute bottom-32 right-8 sm:right-16 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full opacity-20 animate-float"
+        className="absolute bottom-32 right-8 sm:right-16 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-full opacity-25 animate-float"
         style={{ animationDelay: "1s" }}
       ></div>
       <div
-        className="absolute top-1/2 right-4 sm:right-20 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full opacity-30 animate-float"
+        className="absolute top-1/2 right-4 sm:right-20 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-yellow-400 to-amber-400 rounded-full opacity-35 animate-float"
         style={{ animationDelay: "2s" }}
       ></div>
 
       <div className="container-custom relative z-10 px-4">
         <div className="text-center space-y-6 sm:space-y-8">
           {/* Badge */}
-          <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-3 py-2 sm:px-4 text-yellow-400 border border-yellow-500/30">
+          <div className="inline-flex items-center space-x-2 bg-amber-900/20 backdrop-blur-sm rounded-full px-3 py-2 sm:px-4 text-yellow-300 border border-yellow-400/30">
             <Star size={14} className="fill-current sm:w-4 sm:h-4" />
             <span className="text-xs sm:text-sm font-medium">
               +10 Anos de Experiência
@@ -35,9 +35,9 @@ export default function Hero() {
               <span className="sm:hidden"> </span>do Seu Piso!
             </h1>
 
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto px-4">
+            <p className="text-lg sm:text-xl md:text-2xl text-amber-100 max-w-3xl mx-auto px-4">
               Serviços especializados em polimento e restauração de pisos em
-              <span className="text-yellow-400 font-semibold">
+              <span className="text-yellow-300 font-semibold">
                 {" "}
                 Salvador e Região Metropolitana
               </span>
@@ -50,7 +50,7 @@ export default function Hero() {
               href="https://wa.me/5571999999999?text=Olá! Gostaria de solicitar um orçamento para polimento de piso."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center space-x-2 sm:space-x-3 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-xl shadow-2xl hover:shadow-green-500/25 transition-all duration-300 transform hover:-translate-y-1 text-sm sm:text-base lg:text-lg w-full sm:w-auto max-w-md sm:max-w-none"
+              className="inline-flex items-center justify-center space-x-2 sm:space-x-3 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-xl shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 transform hover:-translate-y-1 text-sm sm:text-base lg:text-lg w-full sm:w-auto max-w-md sm:max-w-none animate-glow"
             >
               <Wrench size={20} className="sm:w-6 sm:h-6" />
               <span className="text-center">PEÇA SEU ORÇAMENTO AGORA</span>
@@ -60,28 +60,28 @@ export default function Hero() {
           {/* Stats */}
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8 mt-8 sm:mt-12 px-4">
             <div className="text-center">
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-300">
                 1000+
               </div>
-              <div className="text-gray-400 text-sm sm:text-base">
+              <div className="text-amber-200 text-sm sm:text-base">
                 Pisos Restaurados
               </div>
             </div>
-            <div className="hidden sm:block w-px h-12 bg-gray-600"></div>
+            <div className="hidden sm:block w-px h-12 bg-amber-600"></div>
             <div className="text-center">
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-300">
                 10+
               </div>
-              <div className="text-gray-400 text-sm sm:text-base">
+              <div className="text-amber-200 text-sm sm:text-base">
                 Anos de Experiência
               </div>
             </div>
-            <div className="hidden sm:block w-px h-12 bg-gray-600"></div>
+            <div className="hidden sm:block w-px h-12 bg-amber-600"></div>
             <div className="text-center">
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-300">
                 500+
               </div>
-              <div className="text-gray-400 text-sm sm:text-base">
+              <div className="text-amber-200 text-sm sm:text-base">
                 Clientes Satisfeitos
               </div>
             </div>
