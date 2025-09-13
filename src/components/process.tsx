@@ -87,16 +87,28 @@ export default function Process() {
           {/* Visual */}
           <div className="relative mt-8 lg:mt-0 order-first lg:order-last">
             <div className="relative">
-              {/* Main Image Placeholder */}
-              <div className="w-full h-64 sm:h-80 lg:h-96 bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl flex items-center justify-center text-gray-500 shadow-2xl">
-                <div className="text-center space-y-2">
-                  <Shield
-                    size={32}
-                    className="mx-auto text-yellow-500 sm:w-12 sm:h-12"
-                  />
-                  <p className="font-medium text-sm sm:text-base">
-                    Processo Profissional
-                  </p>
+              {/* Main Image */}
+              <div
+                className="w-full h-64 sm:h-80 lg:h-96 rounded-2xl shadow-2xl relative overflow-hidden"
+                style={{
+                  backgroundImage: "url('/piso-2.png')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat"
+                }}
+              >
+                {/* Overlay for better text readability */}
+                <div className="absolute inset-0 bg-gradient-to-br from-black/30 via-black/20 to-black/40"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-white space-y-2 text-center">
+                    <Shield
+                      size={32}
+                      className="mx-auto text-yellow-400 sm:w-12 sm:h-12 drop-shadow-lg"
+                    />
+                    <p className="font-bold text-sm sm:text-base drop-shadow-lg">
+                      Processo Profissional
+                    </p>
+                  </div>
                 </div>
               </div>
 

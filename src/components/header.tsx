@@ -2,28 +2,30 @@
 
 import { useState } from 'react'
 import { Menu, X, Phone } from 'lucide-react'
+import Image from "next/image";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="fixed w-full top-0 bg-amber-50/95 backdrop-blur-md shadow-lg z-50 transition-all duration-300">
       <div className="container-custom">
         <div className="flex items-center justify-between py-3 sm:py-4">
           {/* Logo */}
-          <div className="flex items-center space-x-2 sm:space-x-3">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-yellow-600 to-yellow-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg sm:text-xl">S</span>
+          <a
+            href="#hero"
+            className="flex items-center space-x-2 sm:space-x-3 cursor-pointer hover:opacity-80 transition-opacity"
+          >
+            <div className="w-12 h-12 sm:w-16 sm:h-16">
+              <Image
+                src="/SOS.png"
+                alt="SOS Polimentos - Revitalização e Polimento"
+                width={64}
+                height={64}
+                className="w-full h-full object-contain"
+              />
             </div>
-            <div>
-              <h1 className="text-lg sm:text-xl font-bold text-slate-800">
-                SOS
-              </h1>
-              <p className="text-xs text-yellow-700 hidden sm:block">
-                Polimentos
-              </p>
-            </div>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-4 lg:space-x-8">

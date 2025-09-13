@@ -2,8 +2,18 @@ import { Wrench, Star } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900 pt-16 sm:pt-20">
-      {/* Background Pattern */}
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 sm:pt-20"
+      style={{
+        backgroundImage: "url('/piso.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+      }}
+    >
+      {/* Background Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/75 to-amber-900/70"></div>
       <div className="absolute inset-0 bg-pattern opacity-10"></div>
 
       {/* Animated Background Elements */}
@@ -23,7 +33,7 @@ export default function Hero() {
           <div className="inline-flex items-center space-x-2 bg-amber-900/20 backdrop-blur-sm rounded-full px-3 py-2 sm:px-4 text-yellow-300 border border-yellow-400/30">
             <Star size={14} className="fill-current sm:w-4 sm:h-4" />
             <span className="text-xs sm:text-sm font-medium">
-              +10 Anos de Experiência
+              Profissionais Qualficados
             </span>
           </div>
 
@@ -56,45 +66,18 @@ export default function Hero() {
               <span className="text-center">PEÇA SEU ORÇAMENTO AGORA</span>
             </a>
           </div>
-
-          {/* Stats */}
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8 mt-8 sm:mt-12 px-4">
-            <div className="text-center">
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-300">
-                1000+
-              </div>
-              <div className="text-amber-200 text-sm sm:text-base">
-                Pisos Restaurados
-              </div>
-            </div>
-            <div className="hidden sm:block w-px h-12 bg-amber-600"></div>
-            <div className="text-center">
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-300">
-                10+
-              </div>
-              <div className="text-amber-200 text-sm sm:text-base">
-                Anos de Experiência
-              </div>
-            </div>
-            <div className="hidden sm:block w-px h-12 bg-amber-600"></div>
-            <div className="text-center">
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-300">
-                500+
-              </div>
-              <div className="text-amber-200 text-sm sm:text-base">
-                Clientes Satisfeitos
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden sm:block">
+      <a
+        href="#servicos"
+        className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden sm:block cursor-pointer hover:opacity-75 transition-opacity"
+      >
         <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
         </div>
-      </div>
+      </a>
     </section>
   );
 }

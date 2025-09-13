@@ -1,4 +1,4 @@
-import { MessageCircle } from 'lucide-react'
+import Image from "next/image";
 
 export default function WhatsAppButton() {
   return (
@@ -9,8 +9,11 @@ export default function WhatsAppButton() {
       className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 w-14 h-14 sm:w-16 sm:h-16 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center text-white shadow-2xl hover:shadow-green-500/50 transition-all duration-300 transform hover:scale-110 group"
       aria-label="Fale conosco no WhatsApp"
     >
-      <MessageCircle
-        size={24}
+      <Image
+        src="/whatsapp1.png"
+        alt="WhatsApp"
+        width={28}
+        height={28}
         className="sm:w-7 sm:h-7 group-hover:scale-110 transition-transform"
       />
 

@@ -4,41 +4,47 @@ export default function BeforeAfter() {
   const examples = [
     {
       title: "Mármore",
-      subtitle: "Fosco vs. Brilho Espelhado",
+      subtitle: "Manchado vs. Brilho Espelhado",
       beforeText: "antes",
-      afterText: "depois"
-    },
-    {
-      title: "Porcelanato", 
-      subtitle: "Encardido vs. Restaurado",
-      beforeText: "antes",
-      afterText: "depois"
+      afterText: "depois",
+      beforeImage: "/marmore.jpg"
     },
     {
       title: "Piso de Madeira",
-      subtitle: "Danificado vs. Revitalizado", 
+      subtitle: "Opaco vs. Brilhante",
       beforeText: "antes",
-      afterText: "depois"
+      afterText: "depois",
+      beforeImage: "/madeira.jpg"
+    },
+    {
+      title: "Porcelanato",
+      subtitle: "Encardido vs. Restaurado",
+      beforeText: "antes",
+      afterText: "depois",
+      beforeImage: "/porcelanato.jpg"
     },
     {
       title: "Bancada de Granito",
       subtitle: "Arranhada vs. Polida",
-      beforeText: "antes", 
-      afterText: "depois"
+      beforeText: "antes",
+      afterText: "depois",
+      beforeImage: "/bancada.jpg"
     },
     {
       title: "Inox",
       subtitle: "Manchado vs. Reluzente",
       beforeText: "antes",
-      afterText: "depois"
+      afterText: "depois",
+      beforeImage: "/inox.jpg"
     },
     {
-      title: "Granilite",
-      subtitle: "Desgastado vs. Renovado",
+      title: "Granito",
+      subtitle: "Fosco vs. Brilho Espelhado",
       beforeText: "antes",
-      afterText: "depois"
+      afterText: "depois",
+      beforeImage: "/granito.jpg"
     }
-  ]
+  ];
 
   return (
     <section
@@ -74,38 +80,37 @@ export default function BeforeAfter() {
               className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 card-hover"
             >
               {/* Image Container */}
-              <div className="relative h-48 sm:h-56 md:h-64 bg-gradient-to-br from-gray-100 to-gray-200">
-                {/* Before/After Overlay */}
-                <div className="absolute inset-0 flex">
-                  <div className="w-1/2 bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center relative">
-                    <span className="absolute bottom-2 left-2 sm:bottom-4 sm:left-4 bg-black/70 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
-                      {example.beforeText}
-                    </span>
-                    <div className="text-gray-600 text-center">
-                      <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gray-400 rounded-full mx-auto mb-1 sm:mb-2"></div>
-                      <p className="text-xs">Antes</p>
-                    </div>
-                  </div>
-                  <div className="w-1/2 bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center relative">
-                    <span className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 bg-yellow-600 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
-                      {example.afterText}
-                    </span>
-                    <div className="text-yellow-700 text-center">
-                      <div className="w-12 h-12 sm:w-16 sm:h-16 bg-yellow-300 rounded-full mx-auto mb-1 sm:mb-2 shadow-lg"></div>
-                      <p className="text-xs font-medium">Depois</p>
-                    </div>
-                  </div>
-                </div>
+              <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
+                {/* Before/After Image */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url('${example.beforeImage}')`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center"
+                  }}
+                >
+                  {/* Overlay for better text visibility */}
+                  <div className="absolute inset-0 bg-black/20"></div>
 
-                {/* Divider Line */}
-                <div className="absolute top-0 left-1/2 w-0.5 h-full bg-white transform -translate-x-0.5"></div>
+                  {/* Labels */}
+                  <span className="absolute bottom-2 left-2 sm:bottom-4 sm:left-4 bg-black/80 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
+                    {example.beforeText}
+                  </span>
+                  <span className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 bg-yellow-600 text-white px-2 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium">
+                    {example.afterText}
+                  </span>
 
-                {/* Arrow Indicator */}
-                <div className="absolute top-1/2 left-1/2 w-6 h-6 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center transform -translate-x-1/2 -translate-y-1/2 shadow-lg group-hover:scale-110 transition-transform">
-                  <ArrowRight
-                    size={14}
-                    className="text-yellow-600 sm:w-4 sm:h-4"
-                  />
+                  {/* Center Divider Line */}
+                  <div className="absolute top-0 left-1/2 w-0.5 h-full bg-white/80 transform -translate-x-0.5 shadow-lg"></div>
+
+                  {/* Arrow Indicator */}
+                  <div className="absolute top-1/2 left-1/2 w-8 h-8 sm:w-10 sm:h-10 bg-white rounded-full flex items-center justify-center transform -translate-x-1/2 -translate-y-1/2 shadow-lg group-hover:scale-110 transition-transform">
+                    <ArrowRight
+                      size={16}
+                      className="text-yellow-600 sm:w-5 sm:h-5"
+                    />
+                  </div>
                 </div>
               </div>
 
