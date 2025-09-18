@@ -34,7 +34,7 @@ export default function CTA() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4">
             <a
-              href="https://wa.me/5571999999999?text=Olá! Gostaria de solicitar um orçamento para polimento de piso."
+              href="https://wa.me/557192244171?text=Olá! Gostaria de solicitar um orçamento para polimento de piso."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto bg-white hover:bg-gray-50 text-yellow-600 font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-xl shadow-2xl hover:shadow-white/25 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center space-x-2 sm:space-x-3 text-sm sm:text-base lg:text-lg group"

@@ -138,7 +138,7 @@ export default function BeforeAfter() {
               seus pisos
             </p>
             <a
-              href="https://wa.me/5571999999999?text=Olá! Vi os resultados antes e depois e gostaria de um orçamento!"
+              href="https://wa.me/557192244171?text=Olá! Vi os resultados antes e depois e gostaria de um orçamento!"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary inline-flex items-center space-x-2 w-full sm:w-auto justify-center"

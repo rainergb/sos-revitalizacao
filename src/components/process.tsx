@@ -74,7 +74,7 @@ export default function Process() {
             {/* CTA */}
             <div className="pt-2">
               <a
-                href="https://wa.me/5571999999999?text=Olá! Gostaria de saber mais sobre o processo de polimento."
+                href="https://wa.me/557192244171?text=Olá! Gostaria de saber mais sobre o processo de polimento."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary w-full sm:w-auto inline-flex justify-center"

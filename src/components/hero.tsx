@@ -57,7 +57,7 @@ export default function Hero() {
           {/* CTA Button */}
           <div className="px-4">
             <a
-              href="https://wa.me/5571999999999?text=Olá! Gostaria de solicitar um orçamento para polimento de piso."
+              href="https://wa.me/557192244171?text=Olá! Gostaria de solicitar um orçamento para polimento de piso."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center space-x-2 sm:space-x-3 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-xl shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 transform hover:-translate-y-1 text-sm sm:text-base lg:text-lg w-full sm:w-auto max-w-md sm:max-w-none animate-glow"

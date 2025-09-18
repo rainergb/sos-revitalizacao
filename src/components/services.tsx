@@ -84,7 +84,7 @@ export default function Services() {
         {/* CTA */}
         <div className="text-center mt-12 sm:mt-16 px-4">
           <a
-            href="https://wa.me/5571999999999?text=Olá! Gostaria de saber mais sobre os serviços de polimento."
+            href="https://wa.me/557192244171?text=Olá! Gostaria de saber mais sobre os serviços de polimento."
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary inline-flex items-center space-x-2 w-full sm:w-auto justify-center"
